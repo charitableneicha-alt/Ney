@@ -123,14 +123,13 @@ export function render() {
           <div class="summary-rows">
             <div><span>Sous-total</span><span>${formatPrice(totals.subtotal)}</span></div>
             ${totals.promo ? `<div class="discount"><span>Remise ${escapeHtml(totals.promo.code)}</span><span>− ${formatPrice(totals.discount)}</span></div>` : ''}
-            <div><span>Livraison</span><span>Non applicable</span></div>
           </div>
 
           <div class="summary-total">
             <span>Total</span>
             <strong>${formatPrice(totals.total)}</strong>
           </div>
-          <p class="summary-note">${totals.count} ${totals.count > 1 ? 'pièces' : 'pièce'} · fabrication à la commande</p>
+          <p class="summary-note">${totals.count} ${totals.count > 1 ? 'pièces' : 'pièce'} · fabrication à la commande · aucun frais de livraison</p>
           <a href="#/panier" class="text-link">Modifier le panier</a>
         </aside>
       </form>
