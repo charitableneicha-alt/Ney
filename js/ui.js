@@ -274,7 +274,3 @@ export function debounce(fn, delay = 200) {
     timer = window.setTimeout(() => fn(...args), delay);
   };
 }
-
-export function scrollToTop(behaviour = 'smooth') {
-  window.scrollTo({ top: 0, behavior: behaviour });
-}

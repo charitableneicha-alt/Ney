@@ -2096,28 +2096,6 @@ button.btn {
   color: var(--danger);
 }
 
-.free-ship-meter {
-  margin: 4px 0 16px;
-  font-size: 0.74rem;
-  color: var(--muted);
-}
-
-.meter {
-  height: 4px;
-  background: var(--sand);
-  border-radius: var(--radius-pill);
-  overflow: hidden;
-  margin-top: 7px;
-}
-
-.meter i {
-  display: block;
-  height: 100%;
-  background: var(--clay);
-  border-radius: var(--radius-pill);
-  transition: width 0.4s var(--ease);
-}
-
 .summary .btn {
   margin-top: 0;
 }
