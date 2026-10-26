@@ -17,7 +17,7 @@ import {
 } from '../data.js';
 import { productGrid, sectionHead } from '../components.js';
 import { addToCart, unitPriceFor } from '../state.js';
-import { escapeHtml, formatPrice, icon, isLight, starsHtml, svgGarment, toast } from '../ui.js';
+import { escapeHtml, formatPrice, icon, starsHtml, svgGarment, toast } from '../ui.js';
 
 const PRINT_GEOMETRY = {
   tshirt: { top: 33, width: 30 },
