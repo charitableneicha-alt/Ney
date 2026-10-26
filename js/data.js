@@ -71,7 +71,7 @@ export const GARMENT_TYPES = ['tshirt', 'sweat', 'hoodie', 'cap', 'tote', 'mug']
 export const CATEGORIES = [
   { id: 'tshirts', label: 'T-shirts', copy: 'Coton bio 220 g, coupe droite', type: 'tshirt' },
   { id: 'sweats', label: 'Sweats & hoodies', copy: 'Molleton gratté 380 g', type: 'sweat' },
-  { id: 'casquettes', label: 'Casquettes', copy: 'Sergé de coton, broderie incluse', type: 'cap' },
+  { id: 'casquettes', label: 'Casquettes', copy: 'Sergé de coton, broderie au choix', type: 'cap' },
   { id: 'accessoires', label: 'Accessoires', copy: 'Tote bags, mugs, petites pièces', type: 'tote' },
 ];
 
