@@ -3,7 +3,7 @@
  */
 
 import { CATEGORIES, COLORS, PRODUCTS, bestSellers, categoryCount } from '../data.js';
-import { productCard, productGrid, sectionHead } from '../components.js';
+import { productGrid, sectionHead } from '../components.js';
 import { escapeHtml, formatPrice, icon, svgGarment } from '../ui.js';
 
 function heroHero() {
@@ -230,5 +230,3 @@ export const meta = {
   description:
     'Composez votre t-shirt, sweat, casquette ou accessoire : couleur, taille, texte et logo. Fabrication à la commande, sans stock.',
 };
-
-export { productCard };

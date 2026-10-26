@@ -118,7 +118,7 @@ export function render(params) {
             <div id="previewGarment" style="width:100%;display:grid;place-items:center;">
               ${svgGarment(product.type, { color: COLORS[defaultColor].hex, label: product.name })}
             </div>
-            <div class="print-area" id="printArea" data-placement="${defaultPlacement}"
+            <div class="print-area" id="printArea" data-placement="${defaultPlacement}" aria-hidden="true"
                  style="top:${geo.top}%;left:${geo.left}%;width:${geo.width}%;"></div>
           </div>
           <div class="preview-caption">
