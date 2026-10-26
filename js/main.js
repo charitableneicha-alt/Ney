@@ -3,7 +3,7 @@
  */
 
 import { cartCount, subscribe } from './state.js';
-import { escapeHtml, toast } from './ui.js';
+import { toast } from './ui.js';
 
 import * as home from './views/home.js';
 import * as catalog from './views/catalog.js';
@@ -215,4 +215,4 @@ function init() {
 
 init();
 
-export { renderRoute, escapeHtml };
+export { renderRoute };

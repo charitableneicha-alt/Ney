@@ -32,12 +32,6 @@ export function formatDate(value) {
   return dateFormatter.format(date);
 }
 
-export function formatDateShort(value) {
-  const date = value instanceof Date ? value : new Date(value);
-  if (Number.isNaN(date.getTime())) return '';
-  return date.toLocaleDateString('fr-FR');
-}
-
 export function escapeHtml(value) {
   return String(value ?? '')
     .replace(/&/g, '&amp;')
@@ -45,14 +39,6 @@ export function escapeHtml(value) {
     .replace(/>/g, '&gt;')
     .replace(/"/g, '&quot;')
     .replace(/'/g, '&#39;');
-}
-
-export function pluralise(count, singular, plural) {
-  return count > 1 ? plural : singular;
-}
-
-export function uidLocal(prefix = 'u') {
-  return `${prefix}_${Math.random().toString(36).slice(2, 9)}`;
 }
 
 /* -------------------------------------------------------------------------- */
@@ -204,10 +190,6 @@ export function svgGarment(type, options = {}) {
     ${collar}
     <path d="M58 186H142" ${soft} />
   </svg>`;
-}
-
-export function garmentLabel(type) {
-  return GARMENT_LABELS[type] || 'Vêtement';
 }
 
 /* -------------------------------------------------------------------------- */
