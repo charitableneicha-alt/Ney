@@ -60,9 +60,7 @@ function cartLine({ item, product, unitPrice, lineTotal }) {
   </article>`;
 }
 
-/* Import différé pour éviter un cycle : le SVG est fourni par ui.js. */
-import { svgGarment } from '../ui.js';
-
+/* Vignette SVG du vêtement, dans la couleur choisie. */
 function svgThumb(product, colorKey) {
   const color = COLORS[colorKey] || COLORS.ecru;
   return svgGarment(product.type, { color: color.hex, label: product.name, className: 'thumb-garment' });
