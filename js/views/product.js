@@ -95,6 +95,10 @@ export function render(params) {
   const defaultPlacement = placements[0].id;
   const related = relatedProducts(product, 4);
   const geo = printGeometry(product.type, defaultPlacement);
+  const apparel = product.type === 'tshirt' || product.type === 'sweat' || product.type === 'hoodie';
+  const fitLabel = apparel
+    ? `Coupe ${product.fit || 'unisexe'}`
+    : `${product.type === 'mug' ? 'Format' : 'Taille'} ${product.fit || 'unique'}`;
 
   return `<div class="view" data-product-view data-product-id="${product.id}">
     <div class="container">
