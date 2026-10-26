@@ -20,11 +20,11 @@ export const CUSTOM_PRICES = {
   logo: 6.9,
 };
 
-/** Seuil de livraison offerte (en euros). */
-export const FREE_SHIPPING_THRESHOLD = 60;
-
-/** Frais de livraison standard. */
-export const SHIPPING_COST = 5.9;
+/**
+ * Pas de stock : chaque pièce est fabriquée à la commande, le catalogue est
+ * donc toujours disponible. Pas de livraison gérée non plus : le total
+ * correspond strictement aux articles moins la remise éventuelle.
+ */
 
 /** Codes promotionnels : code -> { rate, label, min }. */
 export const PROMO_CODES = {
@@ -32,27 +32,25 @@ export const PROMO_CODES = {
   ATELIER15: { rate: 0.15, label: 'Offre atelier', min: 120 },
 };
 
-export const SHIPPING_METHODS = [
+/** Options de paiement proposées au moment de la validation. */
+export const PAYMENT_METHODS = [
   {
-    id: 'standard',
-    label: 'Standard — Colissimo',
-    detail: '3 à 5 jours ouvrés',
-    price: 5.9,
-    freeFrom: FREE_SHIPPING_THRESHOLD,
+    id: 'carte',
+    label: 'Carte bancaire',
+    detail: 'Paiement simulé — aucune donnée transmise',
+    icon: 'card',
   },
   {
-    id: 'express',
-    label: 'Express — Chronopost',
-    detail: '24 à 48 h ouvrées',
-    price: 12.9,
-    freeFrom: null,
+    id: 'virement',
+    label: 'Virement',
+    detail: 'Les coordonnées sont affichées sur la confirmation',
+    icon: 'bank',
   },
   {
     id: 'atelier',
-    label: 'Retrait à l’atelier',
-    detail: '14 rue des Textiles, Lyon 2e — sous 48 h',
-    price: 0,
-    freeFrom: 0,
+    label: 'Réglé à l’atelier',
+    detail: 'Vous réglez lors du retrait de votre pièce',
+    icon: 'shop',
   },
 ];
 
