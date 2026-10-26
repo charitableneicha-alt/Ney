@@ -196,18 +196,18 @@ export const PRODUCTS = [
     price: 29.0,
     colors: ['sable', 'noir', 'olive', 'marine'],
     sizes: ['Taille unique'],
-    badge: 'Broderie incluse',
+    badge: 'Personnalisable',
     rating: 4.7,
     reviews: 78,
     tone: 'ink',
     short: 'Sergé de coton, six panneaux, fermeture métal réglable.',
     description:
-      'Six panneaux en sergé de coton, visière incurvée préformée, œillets brodés, fermeture métal réglable. La broderie frontale est incluse dans le prix : votre logo ou vos initiales, jusqu’à 12 caractères.',
+      'Six panneaux en sergé de coton, visière incurvée préformée, œillets brodés, fermeture métal réglable. La broderie frontale met en valeur votre logo ou vos initiales, jusqu’à 12 caractères.',
     details: [
       '100 % sergé de coton',
       '6 panneaux, visière préformée',
       'Fermeture métal réglable',
-      'Broderie frontale incluse (12 caractères)',
+      'Zone de broderie frontale 8 cm',
     ],
   },
   {
@@ -229,7 +229,7 @@ export const PRODUCTS = [
       'Face coton, dos filet polyester',
       'Profil haut, visière plate',
       'Fermeture snapback',
-      'Broderie frontale incluse',
+      'Zone de broderie frontale 8 cm',
     ],
   },
   {
@@ -332,14 +332,14 @@ export const PRODUCTS = [
     rating: 4.6,
     reviews: 33,
     tone: 'sand',
-    short: 'Sangle scratch, visière souple, broderie prénom offerte.',
+    short: 'Sangle scratch, visière souple, broderie prénom en option.',
     description:
-      'Pensée pour les têtes qui bougent : sangle scratch réglable, visière souple, sergé lavable. La broderie prénom est incluse.',
+      'Pensée pour les têtes qui bougent : sangle scratch réglable, visière souple, sergé lavable. La broderie prénom se place à l’avant, en lettres nettes.',
     details: [
       'Sergé de coton lavable',
       'Sangle scratch réglable',
       'Visière souple',
-      'Broderie prénom incluse',
+      'Zone de broderie prénom 7 cm',
     ],
   },
 ];
