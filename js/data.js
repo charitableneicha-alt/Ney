@@ -409,8 +409,8 @@ export function getFont(id) {
   return FONTS.find((f) => f.id === id) || FONTS[0];
 }
 
-export function getShippingMethod(id) {
-  return SHIPPING_METHODS.find((m) => m.id === id) || SHIPPING_METHODS[0];
+export function getPaymentMethod(id) {
+  return PAYMENT_METHODS.find((m) => m.id === id) || PAYMENT_METHODS[0];
 }
 
 export function categoryCount(catId) {
