@@ -68,6 +68,17 @@ js/components.js        cartes produit, titres de section, états vides
 js/views/*.js           une vue par route
 ```
 
+## Tests
+
+```bash
+node tests/state.test.mjs   # panier, tarifs, promo, commandes, persistance (28 assertions)
+```
+
+Le test de rendu bout-en-bout (jsdom) a également été exécuté en local : navigation sur les
+9 routes, configurateur, upload de logo, promo, validation de formulaires et confirmation,
+sans erreur console. Il nécessite `jsdom` installé hors dépôt (aucune dépendance n’est ajoutée
+au projet pour rester 100 % statique).
+
 ## Déploiement
 
 Le `Dockerfile` sert les fichiers statiques sur le port 3000, en écoutant sur `0.0.0.0`.
