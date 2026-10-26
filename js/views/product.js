@@ -498,9 +498,6 @@ export function mount(root, params) {
   });
 
   paintAll();
-  if (isLight(COLORS[cfg.color].hex)) {
-    printArea?.style.setProperty('--print-dark', '1');
-  }
 }
 
 export const meta = {
