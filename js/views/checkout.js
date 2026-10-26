@@ -3,9 +3,9 @@
  * Coordonnées + moyen de paiement simulé. Pas de livraison, pas de stock.
  */
 
-import { COLORS, PAYMENT_METHODS, getCategory } from '../data.js';
+import { COLORS, PAYMENT_METHODS, getCategory, getPaymentMethod } from '../data.js';
 import { emptyState } from '../components.js';
-import { getCartDetailed, getCustomerDraft, getPaymentMethod, getTotals, placeOrder } from '../state.js';
+import { getCartDetailed, getCustomerDraft, getTotals, placeOrder } from '../state.js';
 import { escapeHtml, formatPrice, icon, svgGarment, toast } from '../ui.js';
 
 const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[a-z]{2,}$/i;
