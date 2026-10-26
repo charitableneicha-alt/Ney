@@ -13,7 +13,7 @@ import {
   removeLine,
   updateQty,
 } from '../state.js';
-import { escapeHtml, formatPrice, icon, toast } from '../ui.js';
+import { escapeHtml, formatPrice, icon, svgGarment, toast } from '../ui.js';
 
 function customSummary(item, product) {
   const bits = [];
