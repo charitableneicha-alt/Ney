@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>NEY — Vêtements personnalisés</title>
+  <meta name="description" content="NEY, atelier de vêtements personnalisés : t-shirts, sweats, casquettes et accessoires à composer vous-même. Impression et broderie françaises." />
+  <meta name="theme-color" content="#f6f1ea" />
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Aller au contenu principal</a>
+
+  <div class="announce">
+    <div class="announce-inner">
+      <span>Livraison offerte dès 60 €</span>
+      <span class="dot" aria-hidden="true">•</span>
+      <span>Fabrication européenne</span>
+      <span class="dot" aria-hidden="true">•</span>
+      <span>Personnalisation incluse en 48 h</span>
+    </div>
+  </div>
+
+  <header class="site-header" id="siteHeader">
+    <div class="header-inner">
+      <a class="logo" href="#/" aria-label="NEY — accueil">
+        <span class="logo-mark">NEY</span>
+        <span class="logo-sub">Vêtements personnalisés</span>
+      </a>
+
+      <nav class="main-nav" id="mainNav" aria-label="Navigation principale">
+        <a href="#/">Accueil</a>
+        <a href="#/boutique">Boutique</a>
+        <a href="#/personnalisation">Personnalisation</a>
+        <a href="#/commandes">Mes commandes</a>
+        <a href="#/contact">Contact</a>
+      </nav>
+
+      <div class="header-actions">
+        <a class="cart-link" href="#/panier">
+          <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+            <path d="M6 8h12l-1.2 11.2a2 2 0 0 1-2 1.8H9.2a2 2 0 0 1-2-1.8Z" />
+            <path d="M9 8V6.5a3 3 0 0 1 6 0V8" />
+          </svg>
+          <span>Panier</span>
+          <span class="cart-count" data-cart-count hidden>0</span>
+        </a>
+        <button class="menu-toggle" id="menuToggle" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="mainNav">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main" tabindex="-1"></main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <span class="logo-mark">NEY</span>
+        <p>Atelier de vêtements personnalisés. Des pièces durables, imprimées et brodées à la commande dans notre atelier lyonnais.</p>
+        <div class="footer-social" aria-label="Réseaux sociaux">
+          <a href="#/contact" aria-label="Instagram">Instagram</a>
+          <a href="#/contact" aria-label="Pinterest">Pinterest</a>
+          <a href="#/contact" aria-label="TikTok">TikTok</a>
+        </div>
+      </div>
+
+      <nav class="footer-col" aria-label="Boutique">
+        <h3>Boutique</h3>
+        <a href="#/boutique">Tous les produits</a>
+        <a href="#/boutique?cat=tshirts">T-shirts</a>
+        <a href="#/boutique?cat=sweats">Sweats &amp; hoodies</a>
+        <a href="#/boutique?cat=casquettes">Casquettes</a>
+        <a href="#/boutique?cat=accessoires">Accessoires</a>
+      </nav>
+
+      <nav class="footer-col" aria-label="Informations">
+        <h3>Maison</h3>
+        <a href="#/personnalisation">Comment personnaliser</a>
+        <a href="#/commandes">Suivre ma commande</a>
+        <a href="#/contact">Nous écrire</a>
+        <a href="#/contact">Livraison &amp; retours</a>
+      </nav>
+
+      <div class="footer-col footer-news">
+        <h3>Le carnet NEY</h3>
+        <p>Nouvelles pièces, coulisses de l’atelier et offres réservées. Un email par mois, jamais plus.</p>
+        <form class="newsletter" data-newsletter novalidate>
+          <label class="sr-only" for="newsletterEmail">Adresse email</label>
+          <input id="newsletterEmail" name="email" type="email" placeholder="votre@email.fr" required />
+          <button type="submit" class="btn btn-dark">S’inscrire</button>
+        </form>
+        <p class="newsletter-note">En vous inscrivant, vous acceptez notre politique de confidentialité.</p>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <span>© <span data-year>2026</span> NEY — Atelier de personnalisation, Lyon</span>
+      <div class="footer-legal">
+        <span>Paiement sécurisé</span>
+        <span>Retours 30 jours</span>
+        <span>Fait en Europe</span>
+      </div>
+    </div>
+  </footer>
+
+  <div class="toast-stack" id="toastStack" role="status" aria-live="polite"></div>
+
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>
