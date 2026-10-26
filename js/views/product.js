@@ -155,7 +155,7 @@ export function render(params) {
           <div class="option-group">
             <div class="option-head">
               <span class="option-label">Taille <strong id="sizeLabel">${escapeHtml(product.sizes[0])}</strong></span>
-              <span class="option-value">Coupe ${escapeHtml(product.fit || 'unisexe')}</span>
+              <span class="option-value">${escapeHtml(fitLabel)}</span>
             </div>
             <div class="size-options" id="sizeOptions">${sizeButtons(product, product.sizes[0])}</div>
           </div>
